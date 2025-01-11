@@ -1,6 +1,6 @@
 // Function to fetch quiz data from Google Sheets
 async function fetchQuizData(subject, setName) {
-    const sheetUrl = 'https://spreadsheets.google.com/feeds/list/{spreadsheet_id}/od6/public/values?alt=json';
+    const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRqlyHpZp1H0gGq5yH_yOAlMTKQ_kRUZuiBQkKaYWx_2pNYyyLZOLiY1qCEP2a0qhZyZvNK6e8ER3rc/pubhtml';
     const response = await fetch(sheetUrl);
     const data = await response.json();
     const entries = data.feed.entry;
